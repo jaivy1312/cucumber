@@ -40,6 +40,7 @@ public class CheckoutPage {
 	{
 		checkouttext=driver.findElement(checkouttextsearch).getText().split("-")[0].trim();
 		System.out.println(checkouttext);
+		System.out.println("this is checkoutpage verifytext");
 		return checkouttext;
 	}
 }
