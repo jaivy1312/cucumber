@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 29.77 s <<< FAILURE! - in TestSuite
+runScenario(testrunner.TestngTestRunner)  Time elapsed: 25.949 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //div/h4[@class='product-name']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d310735a-da88-45dc-978e-cdb644ad5eb9, findElement {using=xpath, value=//div/h4[@class='product-name']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0, moz:accessibilityChecks: false, moz:buildID: 20230824132758, moz:debuggerAddress: 127.0.0.1:4742, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 276, moz:profile: C:\Users\starr\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:4742/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d310735a-da88-45dc-978e-cdb644ad5eb9
+

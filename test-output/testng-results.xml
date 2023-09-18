@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-14T03:32:43 EDT" name="Default suite" finished-at="2023-09-14T03:33:15 EDT" duration-ms="31709">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestngTestRunner@ae13544]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-09-14T03:32:43 EDT" name="Default test" finished-at="2023-09-14T03:33:15 EDT" duration-ms="31709">
+      <class name="testrunner.TestngTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.TestngTestRunner@ae13544]" started-at="2023-09-14T03:32:43 EDT" name="setUpClass" finished-at="2023-09-14T03:32:45 EDT" duration-ms="1913" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7bb35cc6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestngTestRunner@ae13544]" started-at="2023-09-14T03:32:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-14T03:33:14 EDT" duration-ms="28923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["place order on main page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search and place the order for products"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestngTestRunner@ae13544]" started-at="2023-09-14T03:32:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-14T03:33:14 EDT" duration-ms="28882" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["place order on main page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search and place the order for products"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //div/h4[@class='product-name']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7272139a-5e39-4b73-88bd-27c475d77810, findElement {using=xpath, value=//div/h4[@class='product-name']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0, moz:accessibilityChecks: false, moz:buildID: 20230824132758, moz:debuggerAddress: 127.0.0.1:13379, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28292, moz:profile: C:\Users\starr\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:13379/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7272139a-5e39-4b73-88bd-27c475d77810]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div/h4[@class='product-name']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7272139a-5e39-4b73-88bd-27c475d77810, findElement {using=xpath, value=//div/h4[@class='product-name']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0, moz:accessibilityChecks: false, moz:buildID: 20230824132758, moz:debuggerAddress: 127.0.0.1:13379, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28292, moz:profile: C:\Users\starr\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:13379/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7272139a-5e39-4b73-88bd-27c475d77810
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at pages.LoginPage.getsearchedproducttext(LoginPage.java:28)
+at stepdefinations.LoginStepDefination.user_search_with_name_on_home_page_and_extract_name_from_there(LoginStepDefination.java:43)
+at ✽.user search with name cabb on home page and extract name from there(file:///C:/Selenium_workspace/Automation/src/test/java/feature/checkout.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.TestngTestRunner@ae13544]" started-at="2023-09-14T03:33:14 EDT" name="tearDownClass" finished-at="2023-09-14T03:33:15 EDT" duration-ms="748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.TestngTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
