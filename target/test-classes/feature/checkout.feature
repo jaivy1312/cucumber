@@ -14,7 +14,7 @@ Feature: Search and place the order for products
    Examples:
    |vegetable|
    |tomato|
-   |cabb|
+   |caul|
 
 
  
