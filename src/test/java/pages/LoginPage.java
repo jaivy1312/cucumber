@@ -28,6 +28,7 @@ public class LoginPage {
 		searchitem=	driver.findElement(searchedtext).getText().split("-")[0].trim();
 		
 		System.out.println(searchitem);
+		System.out.println("this is login page searchitem");
 		return searchitem;
 	}
 	public void selecttopdealspage()
